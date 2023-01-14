@@ -1,0 +1,114 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    background-image: url("backgorundImages/icecrownGif.gif");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main{
+    padding: 0 40px;
+}
+
+.backgroundWelcome{
+    
+    position: relative;
+    height: 745px;
+}
+
+.navbar{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900;
+    height: 75px;
+    padding-left: 20px;
+    color: aqua;
+}
+
+.welcomeButtonContainer{
+    background-color: gray;
+
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+}
+
+.mordekaiserGif{
+    margin-top: 20px;
+    height: 225px;
+    width: 500px;
+    padding-left: 475px;
+}
+
+.mainHeader{
+    font-size: 50px;
+    color: white;
+    padding-left: 390px;
+}
+
+.paragraph1{
+    color: white;
+    padding-left: 230px;
+    font-size: 25px;
+}
+.paragraph2{
+    color: white;
+    padding-left: 550px;
+    font-size: 25px;
+}
+
+.signinbuttonMain{
+    background-color: #1BD7BB;   
+    color: white;
+    margin-left: 150px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+
+
+
+
+.signupbuttonMain{
+    background-color: darkblue;
+    color: white;
+    margin-left: 130px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor:pointer;
+}
+
+.signInText{
+    font-size: 30px;
+    color: #e6cc00;
+    
+}
+.signOutText{
+    font-size: 30px;
+    color: #e6cc00;
+    
+}
+
+.signOutContaier{
+    
+    float: right;
+    margin-right: 110px;
+}
+
+.signInContainer{
+   
+    float: left;
+    margin-left: 160px;
+}
+

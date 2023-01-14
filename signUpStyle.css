@@ -1,0 +1,75 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+main{
+    padding: 0px 40px;
+}
+
+.backgroundImage{
+    background-image: url(backgorundImages/Helia-Shadow-Isles.jpeg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 745px;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900;
+    height: 75px;
+    padding-left: 20px;
+    color: aqua;
+}
+
+.signUpContainer{
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    background-color: darkgray;
+    border-radius: 15px;
+    margin: 40px 500px;
+    text-align: center;
+    color: aqua;
+}
+.signUpLabels{
+    padding: 0px 40px;
+    color: aqua;
+    
+}
+.signUpHeader{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 40px;
+    background-color: darkblue;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+
+
+#signInButtoni{
+    background-color: #1BD7BB;
+}
+button{
+    background-color: steelblue;
+    padding: 5px 25px 5px; 
+    color: white;
+    display: inline-block;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.signinBuutton{
+    background-color: skyblue;
+}

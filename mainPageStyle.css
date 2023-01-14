@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #ddd;
+    background-image: url("backgorundImages/LichKingBackground.webp");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main{
+    padding: 0 40px
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    font-size: 30px;
+    font-weight: 900;
+    height: 75px;
+    padding-left: 20px;
+    color: aqua;
+    align-items: center;
+}
+
+.imagesClass{
+    width: 300px;
+    height: 350px;
+    float: right;
+    padding-bottom: 30px;
+    padding-right: 180px;
+    padding-top: 35px;
+}
+
+.paragraphBox{
+    margin: 100px;
+    background-color: darkblue;
+    border-radius: 15px;
+    height: 500px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: right;
+}
+
+
+.userlogout{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+#signOutBtn{
+    background-color: #ff2c2c;
+    float: right;
+    color: white;
+    height: 35px;   
+    margin-right: 70px;
+}
+
+#signOutBtn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#userdata{
+    font-size: 30px;
+}
+
+
+
+.namesClass{
+    font-size: 30px;
+    color: aliceblue;
+    padding: 5px, 25px;
+    background-color: blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.wikiPara{
+    font-size: 20px;
+    height: 350px;
+    width: 600px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-right: 0px;
+    margin-left: 30px;
+    float: left;
+    border-radius: 15px;
+    background-color: black;
+}
+

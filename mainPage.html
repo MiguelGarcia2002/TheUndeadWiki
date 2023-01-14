@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Wiki</title>
+    <link rel="stylesheet" href="mainPageStyle.css">
+</head>
+
+
+
+<body>
+
+    <header class ="navbar">
+            <span>The Wiki of the undead</span>
+    </header>
+    
+    
+    <main>
+       
+        <div class=""></div>
+        
+
+        <div id="nameInsert"></div>
+
+        <script src="main.js" type="text/javascript"></script>
+
+        <div class="userlogout">
+            <button id="signOutBtn"> Sign Out</button>
+            <div id = "userdata">Logged in as:</div>
+        </div>
+    </main>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+        import {getDatabase, set, get, update, remove, ref, child} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBFVX6_6-IvBhWDNcZ3MYQ53H8PZoczEN8",
+          authDomain: "testing-8e79a.firebaseapp.com",
+          databaseURL: "https://testing-8e79a-default-rtdb.firebaseio.com",
+          projectId: "testing-8e79a",
+          storageBucket: "testing-8e79a.appspot.com",
+          messagingSenderId: "605883417203",
+          appId: "1:605883417203:web:34b3af7d01da8700e46006",
+          measurementId: "G-D1V1K5NXD4"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+        const analytics = getAnalytics(app);
+        const user = auth.currentUser;
+
+        //Everything from here on out is just me writing code
+        const db = getDatabase();
+
+        const signOutbtn = document.querySelector("#signOutBtn");
+        
+        const dbref = ref(db);
+
+        (function(){
+            onAuthStateChanged(auth, (authUser) => {
+                var username;
+                if(authUser){
+                    const uid = authUser.uid;
+                    const rtdbUserRef = ref(db, 'Users/' + authUser.uid);
+                    get(rtdbUserRef).then((snapshot) => {
+                        if(snapshot.exists()){
+                            const data = snapshot.val();
+                            username = data["Username"];
+                            console.log(username);
+                            document.getElementById('userdata').innerHTML = "Logged in as: " + username;
+                        }else{
+                            console.log("No data available");
+                        }        
+                    }).catch((error) => {
+                        console.log(error);
+                    });    
+                }
+                else{
+                    location.href = "welcome.html";
+                }
+              })  
+
+        })()
+        
+        signOutbtn.addEventListener('click', () =>{
+            signOut(auth).then(() => {
+                alert("Logged out, until next we meet");
+                location.href = "welcome.html";
+            }).catch((error) => {
+                alert("Erorr signing out");
+            })
+        })
+
+        </script>
+
+
+             
+</body>
+
+
+
+</html>

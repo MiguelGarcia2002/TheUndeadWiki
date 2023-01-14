@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="welcome.css">
+    <title>The Undead Wiki</title>
+
+   
+
+</head>
+
+<body>
+    
+    <header class = navbar>
+            <span> "The Undead Wiki" </span>
+    </header>
+    <div class="backgroundWelcome">
+
+    <main>
+
+        
+        <img src ="images/MordekaiserGif.gif" class = mordekaiserGif>
+        <h1 class = "mainHeader"> Welcome to the hater page Wiki</h1>
+         <p class = "paragraph1">In this page you will find several villains and characters from different media. This is meant to serve as a small wikipedia-like page that describes several of these characters</p>
+        <p class = "paragraph2">Enjoy your stay young death knight</p>
+
+        <div class = signInContainer>
+            <p class = signInText> If you already have an account sign in here</p>    
+            <button id="signInBtnMain" class = "signinbuttonMain" >Sign In </button>
+        </div>
+        <div class = signOutContaier>
+            <p class = signOutText>Don't have an account? Sign up here</p>
+            <button id="signUpBtnMain" class = "signupbuttonMain" >Sign Up </button>
+        </div>
+
+
+        <script type = "text/javascript">
+            document.getElementById('signUpBtnMain').onclick = function(){
+                location.href = "signUp.html";
+            }
+            document.getElementById('signInBtnMain').onclick = function(){
+                location.href = "login.html";
+            } 
+        </script>
+
+    </main>
+
+</div>
+</body>
+
+</html>

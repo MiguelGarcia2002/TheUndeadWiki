@@ -1,0 +1,77 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #ddd;
+
+}
+
+.backgroundImage{
+    background-image: url(backgorundImages/Frozen_Throne_WoW.webp);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 745px;
+}
+
+main{
+    padding: 0px 40px
+}
+
+.navbar{
+    display: flex;
+    background-color: black;
+    font-size: 30px;
+    font-weight: 900;
+    height: 75px;
+    padding-left: 20px;
+    align-items: center;
+    color: aqua;
+}
+
+.loginPageContainer{
+    align-items: center;
+    margin: 40px 500px;
+    color: aqua;
+    background-color: darkgray; 
+    border-radius: 15px;
+    height: 500px;
+    width: 400px;
+}
+
+.loginHeader{
+    color: white;
+    text-align: center;
+    background-color: #1BD7BB;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.loginElements{    
+    text-align: center;
+}
+
+.button{
+    background-color: steelblue;
+    padding: 5px 25px 5px; 
+    color: white;
+    display: inline-block;
+}
+
+.signUpButton{
+    background-color: darkblue;
+    padding:  5px 25px 5px;
+    color: white;
+    display: inline-block;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
