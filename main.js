@@ -8,12 +8,12 @@ const paragraph4 = "Tiny-Bones is a mono black legendary creature who lives in u
 const paragraph5 = "Nekusar is a Grixis legendray creature who lives in an unkown plane. Nekusar was a king that schemed to retain his kingship even after death, he attained many enemies and was obsessed with the people that threatened his reign. After a failed assassination attempt towards his rival Nekusar was killed, however he transformed himseld into a lich lord after death. Nekusar was released as a Commander exclusive card that is mainly known as a wheels commander, the general playstyle of playing a ton of wheel cards isnt the most enticing for most commander opponents.\n\n Date first printed: November 1, 2013\n\n First set printed: Mind Seize (Commander deck 2013)" ;
 const paragraph6 = "The true lord of the rings Sauron is the central antagonist of the Lord of the Rings trilogy and served as a secondary villain in the Hobbit trilogy. Sauron was the creator of the \"One Ring\" under the command of Morgoth, after Morgoth's death Sauron became the second dark lord conquer Middle Earth, until he was deafeated in the War of the Last Alliance. Most of his power was taken away after the One Ring was cut from him in that battle. From then on Sauron layed dormant until the near end of the Third Age, by then he had gathered his strength and develoepd schemes to regain the ring. He was ultimately defeated at Mount Doom by Froddo Baggins after Frodo destroyed the ring. \n\n First Theatrical Appearance: December 19, 2001";
 
-const arthasPic = "images/The_lich_king_Wotlk.webp";
-const mordPic = "images/MordekaiserPic.webp";
-const karthusPic = "images/karthusPic.png";
-const tinybonesPic = "images/TinyBones.jpg";
-const nekusarPic = "images/nekusar.webp";
-const sauronPic = "images/SauronPic.png";
+const arthasPic = "Images/The_lich_king_Wotlk.webp";
+const mordPic = "Images/MordekaiserPic.webp";
+const karthusPic = "Images/karthusPic.png";
+const tinybonesPic = "Images/TinyBones.jpg";
+const nekusarPic = "Images/nekusar.webp";
+const sauronPic = "Images/SauronPic.png";
 
 const paragraphs = [paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6];
 const pics = [arthasPic, mordPic, karthusPic, tinybonesPic, nekusarPic, sauronPic];
